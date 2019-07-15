@@ -21,7 +21,7 @@ body, html {
 .bigtitle {
 	color: white; 
 	font-family: 'Trocchi', serif; 
-	font-size: 200px; 
+	font-size: 13em; 
 	font-weight: normal; 
 	margin: 0;
 	
@@ -36,4 +36,41 @@ body, html {
 
 .little{
 	font-size: 10px;
+}
+
+.quickinfo{
+	background-color: #083803;
+	color: white;
+	padding-left: 2%;
+	padding-top: 2%;
+	padding-bottom: 2%;
+	font-weight: bold;
+	font-size: 1.9em;
+}
+
+.quickinfo a{
+	color: white;
+}
+
+.quickinfo a:visited{
+	color: white;
+}
+
+.quickinfo img{
+	max-width: 1em;
+	max-height: 1em;
+}
+
+.row.row-no-margin {
+  margin-left: 0px;
+  margin-right: 0px;
+}
+
+.col-no-padding {
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}
+
+.hide{
+	display:none;
 }
