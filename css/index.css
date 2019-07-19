@@ -5,27 +5,29 @@ body, html {
 .bg {
   /* The image used */
   background-image: url("../img/DSCF4573.JPG");
-
-  /* Full height */
   height: 100%;
 
-  /* Center and scale the image nicely */
   background-position: center;
   background-repeat: no-repeat;
-  background-size: cover;
-
-  	padding-left:20%; 
-	padding-top: 25%;
+  background-size: cover; 
 }
 
 .bigtitle {
+	 /** 	padding-left:15%;***/ 
+	padding-top: 20%;
+	
 	color: white; 
 	font-family: 'Trocchi', serif; 
-	font-size: 13em; 
+	font-size: 1500%; 
 	font-weight: normal; 
 	margin: 0;
 	
-	line-height: 1.0em;
+	/*line-height: 1.0em;*/
+}
+
+.title{
+	margin-top: 5%;
+	font-size: 250%;
 }
 
 .footer{
