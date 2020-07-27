@@ -82,6 +82,21 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
 <div itemscope itemtype="http://schema.org/LocalBusiness">
 <h2 itemprop="name" class="hide">Éva Farm</h2>
+<h2 itemprop="priceRange" class="hide">$$</h2>
+<img itemprop="logo" class="hide" src="twitter_card_hu.png " alt="ÉVA FARM logo"></img>
+<img itemprop="image" class="hide" src="img/DSCF4573.JPG" alt="a picture from one of our best harvest"></img>
+<img itemprop="url" class="hide" src="evafarm.github.io/magyar_index.html" alt="our website"></img>
+<div itemprop="address" itemscope class="hide" itemtype="http://schema.org/PostalAddress">
+    <span itemprop="addressLocality">Nagyvárad</span>,
+    <span itemprop="addressRegion">RO</span>
+    <span itemprop="postalCode">410009</span>
+</div>
+<div itemprop="offers" class="hide" itemscope itemtype="http://schema.org/AggregateOffer">
+    Priced from: <span itemprop="lowPrice">3 RON</span> to <span itemprop="highPrice">10 RON</span>
+</div>
+<div itemprop="offers" class="hide" itemscope itemtype="http://schema.org/AggregateOffer">
+    Priced from: <span itemprop="lowPrice">300 HUF</span> to <span itemprop="highPrice">1000 HUF</span>
+</div>
 <div class="row quickinfo row-no-margin">
 	<div class="col-md-4">
 		<center> Kapcsolat: </center>
@@ -234,6 +249,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 		  </div>
 		</div>-->
 
+		<!--
 		<div class="card" style="max-width: 18rem;">
 		   <div class="card-header"></div>
 		  <img class="card-img-top" src="ad_hu/kajszibarack2020.png" alt="apple for juice sale">
@@ -244,7 +260,6 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 		    <br>
 		    <br>
 		    <a href="https://pin.it/6PgPlTn" class="btn btn-danger"><i style="font-size:18px" class="fa">&#xf0d2;</i> Pinterest post</a>
-		    <!--<div class="ribbon red"><span>Fogyóban!</span></div>-->
 		  </div>
 		</div>
 		<div class="card" style="max-width: 18rem;">
@@ -256,10 +271,10 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 		    <a href="https://www.jofogas.hu/hajdu_bihar/Kajszi_barack_elado_106616187.htm" class="btn btn-warning"><img src="https://static.jofogas.hu/img/svg/jfg_logo_general.svg" width="62" height="32" alt="Jófogás"> link</a>
 		    <br>
 		    <br>
-		    <a href="https://pin.it/6PgPlTn" class="btn btn-danger"><i style="font-size:18px" class="fa">&#xf0d2;</i> Pinterest post</a>
+		    <a href="https://pin.it/6PgPlTn" class="btn btn-danger"><i style="font-size:18px" class="fa">&#xf0d2;</i> Pinterest post</a>-->
 		    <!--<div class="ribbon red"><span>Fogyóban!</span></div>-->
-		  </div>
-		</div>
+		  <!--</div>
+		</div>-->
 	</div>
 	<hr>
 </div>
@@ -293,12 +308,17 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 </div>
 
     <script type="application/ld+json">
-    {
+        {
         "@context": "http://schema.org/",
         "@type": "Invoice",
         "broker": {
           "@type": "LocalBusiness",
-          "name": "Éva Farm"
+          "name": "Éva Farm",
+          "image": "img/DSCF4573.JPG",
+          "logo": "img/avatar.png",
+          "priceRange": "$$",
+          "telephone": "+40757063012",
+          "address": "Nagyvárad, Románia, 410009"
         },
         "customer": {
           "@type": "Person",
@@ -309,23 +329,38 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           {
             "@type": "Order",
             "description": "barack eladó",
-            "orderedItem": {
+            "orderedItem": [{
               "@type": "Product",
-              "name": "kajszi barack",
-              "description": "Kajszi barack eladó, kézzel szedve, bio közeli termesztéssel.",
+              "name": "barack",
+              "description": "barack eladó, kézzel szedve, bio közeli termesztéssel.",
               "price": "8",
-              "priceCurrency": "RON"
+              "priceCurrency": "RON",
+              "image": "ad_hu/kajszibarack2020.png",
+			  "offers": {
+			    "@type": "AggregateOffer",
+			    "lowPrice": "3",
+			    "highPrice": "10",
+              	"priceCurrency": "RON"
+			  }
             },
             {
               "@type": "Product",
-              "name": "kajszi barack",
-              "description": "Kajszi barack eladó, kézzel szedve, bio közeli termesztéssel.",
-              "price": "800",
-              "priceCurrency": "HUF"
-            }
+              "name": "barack",
+              "description": "kajszi barack eladó, kézzel szedve, bio közeli termesztéssel.",
+              "price": "8",
+              "priceCurrency": "HUF",
+              "image": "ad_hu/kajszibarack2020huf.png",
+			  "offers": {
+			    "@type": "AggregateOffer",
+			    "lowPrice": "800",
+			    "highPrice": "1000",
+              	"priceCurrency": "HUF"
+			  }
+            }]
           }
         ]
     }
+
     </script>
 
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
