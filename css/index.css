@@ -65,7 +65,8 @@ body, html {
 
 .bg {
   /* The image used */
-  background-image: linear-gradient(rgba(0,0,0,.63), rgba(0,0,0,.63)), url("../img/DSCF4573.JPG");
+  /*background-image: linear-gradient(rgba(0,0,0,.63), rgba(0,0,0,.63)), url("../img/DSCF4573.JPG");*/
+  background-image: linear-gradient(rgba(0,0,0,.63), rgba(0,0,0,.63)), url("../img/background.png");
   height: 100%;
 
   background-position: center;
